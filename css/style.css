@@ -1,0 +1,279 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background:#eee;
+    color:#111;
+    font-size:17px;
+}
+header img{
+    max-width: 3.5em;
+    text-decoration:none;
+    margin-left: 1em;
+}
+header a{
+    color: #333;
+}
+.advert{
+    background:#222;
+    color:#eee;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.advert img{
+    max-width: 1.5em;
+    margin-left: -.5px;
+}
+.main-header{
+    box-shadow:0 1px 6px #888;
+    padding:.5em;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:#fff;
+}
+
+
+.intro{
+    margin:10em 3em 10em 4em;
+}
+.intro h1{
+    font-size:35px;
+}
+.intro p{
+    margin-top:3em;
+}
+
+
+
+.line{
+    border:none;
+    height:2px;
+    margin-top:5em;
+    box-shadow: 0 8px 8px #555;
+}
+
+
+
+
+.why-choose-us{
+    margin:5em 2em 5em 2em;
+}
+.why-choose-us h1{
+    font-size:35px;
+}
+.why-choose-us h3{
+    margin-top:1.5em;
+    color:#3d5a80;
+}
+.why-choose-us p{
+    margin-top:.5em;
+}
+
+
+.contact-team{
+    margin-top:5em;
+}
+.contact-btn{
+    margin-top:3em;
+}
+.why-choose-us a{
+    background:#3d5a80;
+    padding:1em 1em;
+    color:#eee;
+    text-decoration:none;
+    border-radius:.5em;
+}
+
+
+
+.visa-application{
+    margin:3em 2em 3em 2em;
+}
+.visa-application h1{
+    font-size:35px;
+}
+.visa-application h3{
+    margin-top:1.5em;
+    margin-bottom:1em;
+    color:#3d5a80;
+}
+.visa-application p{
+    margin-top:1em;
+}
+.visa-application li{
+    margin:.5em 3em 0 2em;
+}
+
+
+.text-and-button{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction:column;
+    color:#3d5a80;
+    margin: 0 2em 0 2em;
+}
+.text-and-button h1{
+    font-size: 20px;
+}
+.text-and-button a{
+    background:#3d5a80;
+    color:#eee;
+    text-decoration:none;
+    padding:1em 1em;
+    margin-top:1em;
+    border-radius:.5em;
+}
+
+
+
+.applied-already{
+    color:#3d5a80;
+    margin:3em 2em 3em 2em;
+}
+.applied-already h1{
+    font-size: 20px;
+}
+
+
+
+
+.stuff{
+    display:flex;
+    align-items:left;
+    justify-content:space-between;
+    flex-direction:column;
+}
+.stuff p{
+    margin-top:1em;
+    color:#222;
+}
+
+
+.dropdown{
+    margin-bottom:.2em;
+    margin-top:.3em;
+    width:8em;
+}
+.dropdown:hover{
+    text-decoration:underline;
+}
+/* Style the links inside the dropdown */
+.dropdown a{
+    text-decoration: none;
+    color:#3d5a80;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Style the dropdown content links */
+.dropdown-content a {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+/* Show the dropdown content when hovering over the dropdown container */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+.center-h1{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+footer{
+    background: #3d5a80;
+    padding:1em;
+    color:#eee;
+}
+footer input,
+footer button{
+    padding:.3em;
+    outline:none;
+    border-radius:.5em;
+}
+footer button{
+    background:#eee;
+    padding:.3em 1em;
+}
+.email-info{
+    margin-top:2rem;
+}
+.email{
+    margin-top:1em;
+}
+.copyrights{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-top:5em;
+    font-size:12px;
+    margin-bottom:1em;
+}
+
+
+
+.overlay,
+.overlay2,
+.overlay3{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+/* Styles for the popup */
+.popup,
+.popup2,
+.popup3{
+    background-color: #eee;
+    padding: 10px;
+    padding-bottom: 10px;
+    border-radius: .5em;
+    text-align: center;
+}
+.popup button,
+.popup2 button,
+.popup3 button{
+    background: #3d5a80;
+    color: #ddd;
+    border-radius: 4px;
+    border: none;
+    padding: 5px;
+}
+
+/* Style for the password input */
+#passwordInput,
+#passwordInput2,
+#passwordInput3{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

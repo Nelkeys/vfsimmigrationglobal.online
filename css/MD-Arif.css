@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background:#eee;
+    color:#111;
+    font-size:17px;
+}
+header img{
+    max-width: 3.5em;
+    text-decoration:none;
+    margin-left: 1em;
+}
+header a{
+    color: #333;
+}
+.advert{
+    background:#222;
+    color:#eee;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.advert img{
+    max-width: 1.5em;
+    margin-left: -.5px;
+}
+.main-header{
+    box-shadow:0 1px 6px #888;
+    padding:.5em;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:#fff;
+}
+
+.navigation{
+    display:flex;
+    align-items: left;
+    justify-content:left;
+    margin:2em 1em 3em 2em;
+    color:#999;
+    font-size: 13px;
+    
+}
+.navigation a{
+    text-decoration:none;
+    color:#999;
+}
+
+
+.container{
+    margin: 3em 2em 4em 2em;
+}
+.container h4{
+    margin-top: 2em;
+}
+.names{
+    margin-top: 2em;
+}
+.names p {
+    margin-top: .5em;
+}
+.names p a{
+    text-decoration: none;
+    color: #3d5a80;
+}
+
+
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.overlay button{
+    padding:5px;
+}
+
+/* Styles for the popup */
+.popup {
+    background-color: #3d5a80;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #eee;
+}
+
+/* Style for the password input */
+#passwordInput {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#downloadPopup{
+    background: #3d5a80;
+    width: 100%;
+    height: 5em;
+    padding: 20px;
+    border-radius: 10px;
+}
+#downloadPopup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.downolad,
+.back{
+    padding: .5em;
+    background: #eee;
+}
+
+
+footer{
+    background: #3d5a80;
+    padding:1em;
+    color:#eee;
+}
+footer input,
+footer button{
+    padding:.3em;
+    outline:none;
+    border-radius:.5em;
+}
+footer button{
+    background:#eee;
+    padding:.3em 1em;
+}
+.email-info{
+    margin-top:2rem;
+}
+.email{
+    margin-top:1em;
+}
+.copyrights{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-top:5em;
+    font-size:12px;
+    margin-bottom:1em;
+}

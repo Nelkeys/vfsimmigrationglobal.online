@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background:#eee;
+    color:#111;
+    font-family:serif;
+}
+header img{
+    max-width: 3.2em;
+    text-decoration:none;
+    margin-left: 1em;
+}
+header a{
+    color: #333;
+}
+.advert{
+    background:#222;
+    color:#eee;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.advert img{
+    max-width: 1.5em;
+    margin-left: -.5px;
+}
+.main-header{
+    box-shadow:0 1px 6px #888;
+    padding:1em;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:#fff;
+}
+
+
+.navigation{
+    display:flex;
+    align-items: left;
+    justify-content:left;
+    margin:2em 2em 3em 2em;
+    color:#999;
+    
+}
+.navigation a{
+    text-decoration:none;
+    color:#999;
+}
+
+
+.contact{
+    margin:3em 2em 3em 2em;
+}
+.jump-links{
+    margin-top:3em;
+}
+.jump-links p a{
+    color:#3d5a80;
+    text-decoration:none;
+}
+.contact p{
+    margin-top:.5em;
+}
+
+
+
+
+.container1{
+    margin:4em 3em 5em 3em;
+    padding:2em;
+    display:flex;
+    align-items: center ;
+    justify-content:space-between;
+    flex-direction:column;
+    background: #d5dfff95;
+    border-radius:1em;
+    border:1px solid #555;
+}
+.container1 p{
+    margin-top:2em;
+}
+.container1 a{
+    border-radius:.5em;
+    background:#3d5a80;
+    padding:1em 1em;
+    margin-top:2em;
+    color:#eee;
+    text-decoration:none;
+}
+
+
+
+
+.pdf-download{
+    display:flex;
+    align-items: center ;
+    justify-content:center;
+    margin-top:10em;
+    font-size: 18px;
+}
+.pdf-download a{
+    color: #3d5a80;
+}
+
+
+
+
+.leaders{
+    margin:10em 2em 8em 2em;
+}
+
+.first,
+.second,
+.third{
+    background: #d5dfff95;
+    padding:1.5em;
+    border:1px solid #555;
+    margin-top:1em;
+    border-radius:1em;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+}
+.first img,
+.second img,
+.third img{
+    max-width: 7em;
+}
+.first a,
+.second a,
+.third a{
+    color:#3d5a80;
+    text-decoration: none;
+}
+.first p,
+.second p,
+.third p,
+.first h1,
+.second h1,
+.third h1{
+    margin-top: .5em;
+}
+#email{
+    font-size: 13px;
+}
+
+
+
+footer{
+    background: #3d5a80;
+    padding:1em;
+    color:#eee;
+}
+footer input,
+footer button{
+    padding:.3em;
+    outline:none;
+    border-radius:.5em;
+}
+footer button{
+    background:#eee;
+    padding:.3em 1em;
+}
+.email-info{
+    margin-top:2rem;
+}
+.email{
+    margin-top:1em;
+}
+.copyrights{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-top:5em;
+    font-size:12px;
+    margin-bottom:1em;
+}

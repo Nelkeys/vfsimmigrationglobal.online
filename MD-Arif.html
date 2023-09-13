@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Arif Mahamud Srabon Traveling Agency</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=FontName">
+    <link rel="stylesheet" href="css/MD-Arif.css">
+</head>
+<body>
+    <header>
+        <div class="advert">
+            Apply for a visa to any country from Bangladesh
+        </div>
+        
+        <div class="main-header">
+            <a href="index.html"><img src="assets/logo.jpg" alt="logo"></a>
+            <a href="#"><i class="fas fa-bars"></i></a>
+        </div>
+    </header>
+
+    <section class="navigation">
+        <a href="index.html">Home - </a> 
+        
+        <a href="MD-Arif.html">&nbsp; MD Arif Mahamud Srabon Traveling Agency</a>
+    </section>
+
+
+
+    <section class="container">
+        <h1>Uploaded Visa's</h1>
+        <h4>The visa for the following names have been uploaded. Click and verify to download document</h4>
+        <div class="names">
+            <p>1. <a href="javascript:void(0)" onclick="openPopup(1)">Biddut Mohammad Ulla</a></p>
+            <p>2. <a href="javascript:void(0)" onclick="openPopup(2)">Hossen MD Sumon</a></p>
+            <p>3. <a href="javascript:void(0)" onclick="openPopup(3)">Akter Nasrin</a></p>
+            <p>4. <a href="javascript:void(0)" onclick="openPopup(4)">Rahman Mohamman Mujibur</a></p>
+            <p>5. <a href="javascript:void(0)" onclick="openPopup(5)">Rouf</a></p>
+            <p>6. <a href="javascript:void(0)" onclick="openPopup(6)">Ibrahim</a></p>
+            <p>7. <a href="javascript:void(0)" onclick="openPopup(7)">Sheikh Mohammad Sharif</a></p>
+            <p>8. <a href="javascript:void(0)" onclick="openPopup(8)">Farooq Mohannad Saddam</a></p>
+            <p>9. <a href="javascript:void(0)" onclick="openPopup(9)">Sheikh Imon</a></p>
+            <p>10. <a href="javascript:void(0)" onclick="openPopup(10)">Reza MD Salim</a></p>
+            <p>11. <a href="javascript:void(0)" onclick="openPopup(11)">Sarwar MR Tuhin</a></p>
+            <p>12. <a href="javascript:void(0)" onclick="openPopup(12)">Hossen Eakbal</a></p>
+            <p>13. <a href="javascript:void(0)" onclick="openPopup(13)">Chowdhury Mostafa</a></p>
+            <p>14. <a href="javascript:void(0)" onclick="openPopup(14)">Akther Badhan</a></p>
+            <p>15. <a href="javascript:void(0)" onclick="openPopup(15)">Molla Sohan</a></p>
+            <p>16. <a href="javascript:void(0)" onclick="openPopup(16)">Chowdhury Rashedul Hasan</a></p>
+            <p>17. <a href="javascript:void(0)" onclick="openPopup(17)">Mia Shajahan</a></p>
+            <p>18. <a href="javascript:void(0)" onclick="openPopup(18)">Manna Robydul Hasan Chowdhury</a></p>
+            <p>19. <a href="javascript:void(0)" onclick="openPopup(19)">Sheikh MD Arif</a></p>
+            <p>20. <a href="javascript:void(0)" onclick="openPopup(20)">Sarmin Sabinna</a></p>
+        </div>
+
+        <div class="overlay" id="passwordOverlay">
+            <div class="popup">
+                <p>Confirm Visa Number:</p>
+                <input type="password" id="passwordInput">
+                <button onclick="checkPassword()">Submit</button>
+                <button onclick="cancelPopup()">Cancel</button>
+            </div>
+        </div>
+        
+        <!-- Popup for verification and document options -->
+        <div class="overlay" id="verificationOverlay">
+            <div class="popup" id="downloadPopup">
+                <p>Approved</p>
+                <button onclick="downloadDocument()" class="download">Download</button>
+                <button onclick="cancelPopup()" class="back">Back</button>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="foot-top">
+            <div class="email-info">
+            <h3>Get an Email from Us</h3>
+            <input type="email" id="email" class="email" placeholder="Your Email">
+            <button>Send</button>
+            </div>
+        </div>
+        
+        <div class="copyrights">
+            <p>&copy VFS Immigration Global 2023. All rights reserved.</p>
+            
+            <p>In association with VFS.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script>
+        let currentLinkId = 0;
+
+        function openPopup(linkId) {
+            currentLinkId = linkId;
+            document.getElementById("passwordOverlay").style.display = "flex";
+        }
+
+        function cancelPopup() {
+            document.getElementById("passwordOverlay").style.display = "none";
+            document.getElementById("verificationOverlay").style.display = "none";
+        }
+
+        function checkPassword() {
+            const enteredPassword = document.getElementById("passwordInput").value;
+            // Replace with the actual passwords for each link (you can use an array or object)
+            const passwords = {
+                1: "A04616096", 2: "A11241458", 3: "A11166109", 4: "AB7535344", 5: "B00157181", 6: "A07678741", 7: "BR0954330", 8: "FC8966482",
+                9: "A04941658", 10: "A11494005", 11: "EA0029271", 12: "EH0937821", 13: "EJ0892061", 14: "BX0892061", 15: "A07689434", 16: "B00387799",
+                17: "EJ0799871", 18: "A03801685", 19: "EE0387895", 20: "B00760722"
+                // Add more passwords for other links here
+            };
+
+            if (passwords[currentLinkId] && enteredPassword === passwords[currentLinkId]) {
+                document.getElementById("passwordOverlay").style.display = "none";
+                document.getElementById("verificationOverlay").style.display = "flex";
+            } else {
+                alert("Incorrect password. Try again.");
+            }
+        }
+
+        function downloadDocument() {
+            // Replace with the URL to download the specific document for the current link
+            const documentURLs = {
+                1: "assets/visa1.jpg", 2: "assets/visa2.jpg", 3: "assets/visa3.jpg", 4: "assets/visa4.jpg", 5: "assets/visa5.jpg", 6: "assets/visa6.jpg",
+                7: "assets/visa7.jpg", 8: "assets/visa8.jpg", 9: "assets/visa9.jpg", 10: "assets/visa10.jpg", 11: "assets/visa11.jpg", 12: "assets/visa12.jpg",
+                13: "assets/visa13.jpg", 14: "assets/visa14.jpg", 15: "assets/visa15.jpg", 16: "assets/visa16.jpg", 17: "assets/visa17.jpg", 18: "assets/visa18.jpg",
+                19: "assets/visa19.jpg", 20: "assets/visa20.jpg"
+                // Add more document URLs for other links here
+            };
+
+
+            const currentDocumentURL = documentURLs[currentLinkId];
+
+            if (currentDocumentURL) {
+                const a = document.createElement('a');
+                a.href = currentDocumentURL;
+                a.download = `document_${currentLinkId}.jpg`; // You can customize the downloaded file name if needed
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                alert("file is downloading");
+            } else {
+                alert("Document URL not found for the current link.");
+            }      
+        }
+
+                function sendBtn() {
+                    location.reload()
+                }
+    </script>
+    
+</body>
+</html>
